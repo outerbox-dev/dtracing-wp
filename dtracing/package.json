@@ -1,0 +1,55 @@
+{
+  "name": "dtracing",
+  "version": "1.0.0",
+  "author": "Angry Creative",
+  "description": "Custom theme developed by Angry Creative",
+  "keywords": [],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://git.synotio.se/angrycreative/dtracing.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run development",
+    "development": "mix",
+    "start": "mix watch",
+    "hot": "mix watch --hot",
+    "dist": "npm run production",
+    "build": "npm run production",
+    "production": "mix --production",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "lint:css": "stylelint ./src/sass/* --config ./.stylelintrc --max-warnings 0",
+    "lint:js": "eslint ./src/javascript/* --config ./.eslintrc --max-warnings 0",
+    "fix:css": "stylelint ./src/sass/* --config ./.stylelintrc --fix",
+    "fix:js": "eslint ./src/javascript/* --config ./.eslintrc --fix"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.0.6"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-plugin": "^7.16.5",
+    "@babel/preset-react": "^7.16.7",
+    "@wordpress/eslint-plugin": "^10.0.0",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.0.0",
+    "eslint-webpack-plugin": "^2.5.3",
+    "laravel-mix": "^6.0.16",
+    "laravel-mix-stylelint": "^1.0.0",
+    "postcss": "^8.2.4",
+    "postcss-scss": "^4.0.3",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-webpack-plugin": "^2.1.1"
+  }
+}

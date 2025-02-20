@@ -1,0 +1,26 @@
+@use "Settings/grid" as g;
+
+.qesf-sort-block {
+	/* stylelint-disable declaration-no-important */
+	&__control {
+		// Hard to override since it's a built in ReactSelect class that's providing this
+		background-color: var(--wp--preset--color--black) !important;
+	}
+
+	&__menu {
+		// Hard to override since it's a built in ReactSelect class that's providing this
+		background-color: var(--wp--preset--color--black) !important;
+	}
+
+	&__option {
+		&--is-focused {
+			background-color: var(--wp--preset--color--base-1000) !important;
+		}
+	}
+
+	&__single-value {
+		color: var(--wp--preset--color--white) !important;
+	}
+
+	/* stylelint-enable declaration-no-important */
+}

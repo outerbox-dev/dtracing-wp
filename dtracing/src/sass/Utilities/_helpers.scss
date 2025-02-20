@@ -1,0 +1,22 @@
+@forward "@qala/Utilities/_helpers.scss";
+@use "Settings/grid"as g;
+
+.is-hidden {
+	display: none;
+}
+
+.is-hidden-on-small-screens {
+	display: none;
+
+	@media (min-width: g.$breakpoint-xl) {
+		display: inherit;
+	}
+}
+
+.is-hidden-on-scroll {
+	display: none;
+
+	@media (min-width: g.$breakpoint-xl) {
+		display: inherit;
+	}
+}

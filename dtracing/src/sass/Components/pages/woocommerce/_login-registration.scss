@@ -1,0 +1,32 @@
+@forward "@qala/Components/pages/woocommerce/_login-registration.scss";
+@use "Settings/colors" as c;
+
+$form__text_color: c.$white !default;
+
+.woocommerce-account {
+	&.logged-in .site-content {
+		background-color: inherit;
+	}
+
+	.woocommerce .woocommerce-info {
+		color: inherit;
+	}
+}
+
+.woocommerce-account .woocommerce .u-columns.col2-set,
+.woocommerce-account .woocommerce .woocommerce-form-login {
+	h2,
+	p,
+	a,
+	label {
+		color: $form__text_color;
+	}
+}
+
+.woocommerce-account.woocommerce-lost-password .site-main .container,
+.woocommerce-account.woocommerce-rest-password .site-main .container {
+	h1,
+	label {
+		color: $form__text_color;
+	}
+}

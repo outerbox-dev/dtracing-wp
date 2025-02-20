@@ -1,0 +1,21 @@
+@use "Settings/colors" as c;
+@use "Settings/typography" as t;
+
+@forward "@qala/Components/navigation/_menu.scss" with (
+	$font: t.$font__content,
+	$menu-item_color: c.$white,
+	$mobilemenu__overlay_color: c.$white,
+	$sub-menu_font: t.$font__content,
+	$sub-menu_background-color--hover: c.$black,
+	$sub-menu_background-color--active: c.$black,
+	$sub-menu__menu-item_color: c.$white,
+	$sub-menu__menu-item_color--hover: c.$primary,
+	$sub-menu__menu-item_background--hover: c.$black,
+	$sub-menu__menu-item_border-color: c.$black,
+	$sub-menu__menu-item--emphasized_background: c.$white,
+	$megamenu_background-color: c.$black,
+	$megamenu_border-color: c.$black,
+	$megamenu__menu-item_color: c.$white,
+	$megamenu__overlay_color: c.$white,
+	$sub-menu_background-color: c.$black,
+);

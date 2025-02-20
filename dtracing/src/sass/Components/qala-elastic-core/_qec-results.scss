@@ -1,0 +1,203 @@
+/**
+* IMPORTANT
+*
+* This is only temporary until qala-theme has been updated with https://git.synotio.se/qala/qala-theme/-/merge_requests/418 (and that release was deployed)
+* Once that happens, this styling should be in qala-theme and should only be imported (using @forward) here, and then we can just
+* override any specific colors / variables as needed
+
+@forward "@qala/Components/qala-elastic-core/_qec-results.scss" with (
+	// override any varibles here
+);
+**/
+
+@use "sass:math";
+@use "Settings/grid" as g;
+@use "Settings/colors" as c;
+@use "Settings/typography" as t;
+
+@use "Tools" as tool;
+
+$gap_mobile: 2rem 1rem;
+$gap_breakpoint-m: 4rem 2rem;
+$gap_breakpoint-l: 4rem 2rem;
+$container_margin: 0 0 4rem 0;
+$image_container_height: 300px;
+$button_margin_top: 1rem;
+$post-title_padding: 0 0 1rem 0;
+$product-title_color: c.$base-200;
+$product-title_padding: .5rem 0;
+$product-title_font-weight: 500 !default;
+$product-title_text-transform: none !default;
+$product-title_font-size: 12 !default;
+$product-title_font-size--desktop: 13 !default;
+$price_margin_bottom: 2rem;
+$price_color: c.$base-100 !default;
+$price_color--sale: c.$alert !default;
+$price_font-size: 12 !default;
+$price_font-size--desktop: 13 !default;
+$sale-label_font-family: t.$font__heading !default;
+$sale-label_background-color: c.$primary !default;
+$sale-label_color: c.$white !default;
+$sale-label_border-radius: 0 !default;
+$sale-label_border-color: $sale-label_background-color !default;
+$sale-label_top: 1.15em !default;
+$sale-label_right: auto !default;
+$sale-label_bottom: auto !default;
+$sale-label_left: 1.15em !default;
+$sale-label_padding: .3em .77em !default;
+$sale-label_font-weight: 500 !default;
+$sale-label_letter-spacing: t.$letter-spacing--large !default;
+$sale-label_font-size: 12 !default;
+$sale-label_font-size--desktop: 13 !default;
+
+.qec-results {
+	&__container {
+		display: grid;
+		gap: $gap_mobile;
+		margin: $container_margin;
+		padding-left: 0;
+
+		@media (min-width: g.$breakpoint-m) {
+			gap: $gap_breakpoint-m;
+		}
+
+		@media (min-width: g.$breakpoint-l) {
+			gap: $gap_breakpoint-l;
+		}
+
+		@for $i from 1 through 6 {
+
+			@media (min-width: g.$breakpoint-m) {
+				&--cols-#{$i} {
+					grid-template-columns: repeat($i, minmax(0, 1fr));
+				}
+			}
+
+			&--mobile-cols-#{$i} {
+				grid-template-columns: repeat($i, minmax(0, 1fr));
+			}
+		}
+	}
+
+	&__product {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+
+		.added_to_cart {
+			align-self: flex-start;
+		}
+	}
+
+	&__image-container {
+		position: relative;
+		height: $image_container_height;
+		width: 100%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__generic-post-title {
+		padding: $post-title_padding;
+		margin: 0;
+	}
+
+	&__generic-product-title {
+		padding: $product-title_padding;
+		margin: 0;
+		font-weight: $product-title_font-weight;
+		text-transform: $product-title_text-transform;
+		color: $product-title_color;
+		word-break: break-word;
+		@include tool.font-size( $product-title_font-size );
+
+		@media (min-width: g.$breakpoint-s) {
+			@include tool.font-size( $product-title_font-size--desktop );
+		}
+
+		a {
+			color: $product-title_color;
+		}
+	}
+
+	&__price {
+		margin-bottom: $price_margin_bottom;
+		color: $price_color;
+		display: flex;
+		justify-content: flex-start;
+		@include tool.font-size( $price_font-size );
+
+		@media (min-width: g.$breakpoint-s) {
+			@include tool.font-size( $price_font-size--desktop );
+		}
+
+		ins {
+			text-decoration: none;
+		}
+
+		ins .woocommerce-Price-amount {
+			color: $price_color--sale;
+			letter-spacing: t.$letter-spacing--large;
+		}
+
+		.woocommerce-Price-currencySymbol {
+			margin-left: 3px;
+		}
+
+		del .woocommerce-Price-amount {
+			color: inherit;
+			letter-spacing: t.$letter-spacing--large;
+		}
+
+		del {
+			color: $price_color;
+			margin-left: .5em;
+			opacity: 1;
+		}
+
+		.woocommerce-Price-amount {
+			color: $price_color;
+			font-family: t.$font__content;
+			letter-spacing: t.$letter-spacing--large;
+			font-weight: 300;
+		}
+	}
+
+	&__generic-product-button {
+		align-self: flex-start;
+	}
+
+	&__button {
+		margin-top: $button_margin_top;
+	}
+
+	&__on-sale {
+		position: absolute;
+		pointer-events: none;
+		border-radius: $sale-label_border-radius;
+		top: $sale-label_top;
+		right: $sale-label_right;
+		bottom: $sale-label_bottom;
+		left: $sale-label_left;
+		margin: 0;
+		min-height: auto;
+		min-width: auto;
+		line-height: normal;
+		padding: $sale-label_padding;
+		display: inline-table;
+		font-weight: $sale-label_font-weight;
+		color: $sale-label_color;
+		background-color: $sale-label_background-color;
+		letter-spacing: $sale-label_letter-spacing;
+		@include tool.font-size( $sale-label_font-size );
+
+		@media (min-width: g.$breakpoint-s) {
+			@include tool.font-size( $sale-label_font-size--desktop );
+		}
+	}
+}

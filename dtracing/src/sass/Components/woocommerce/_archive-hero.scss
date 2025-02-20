@@ -1,0 +1,22 @@
+@forward "@qala/Components/woocommerce/_archive-hero.scss";
+@use "Settings/colors"as c;
+
+.archive-mobile-toggled-btn {
+	background-color: transparent;
+	padding: .2rem;
+
+	&:focus,
+	&:active,
+	&:hover {
+		background-color: transparent;
+	}
+
+	svg {
+		height: 32px;
+		width: 32px;
+
+		path {
+			stroke: c.$white;
+		}
+	}
+}

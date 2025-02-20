@@ -1,0 +1,290 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"typography": {
+			"lineHeight": false,
+			"customFontSize": false,
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Barlow\", sans-serif",
+					"name": "Barlow",
+					"slug": "barlow",
+					"fontFace": [
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-Light.woff2" ]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "300",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-LightItalic.woff2" ]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-Regular.woff2" ]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-Italic.woff2" ]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-Medium.woff2" ]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontWeight": "500",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Barlow-MediumItalic.woff2" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Phonk\", sans-serif",
+					"name": "Phonk",
+					"slug": "phonk",
+					"fontFace": [
+						{
+							"fontFamily": "Phonk",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./src/fonts/Phonk-Regular.woff2" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "14px",
+					"name": "Small"
+				},
+				{
+					"slug": "medium",
+					"size": "20px",
+					"name": "Medium"
+				},
+				{
+					"slug": "large",
+					"size": "26px",
+					"name": "Large"
+				},
+				{
+					"slug": "Subheading",
+					"size": "28px",
+					"name": "huge"
+				},
+				{
+					"slug": "Huge",
+					"size": "32px",
+					"name": "huge"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "768px",
+			"wideSize": "1480px"
+		},
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"customDuotone": false,
+			"background": true,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"duotone": [],
+			"palette": [
+				{
+					"name": "Primary 100",
+					"slug": "primary-100",
+					"color": "#AFC0FF"
+				},
+				{
+					"name": "Primary 200",
+					"slug": "primary-200",
+					"color": "#869CF1"
+				},
+				{
+					"name": "Primary 300",
+					"slug": "primary-300",
+					"color": "#637FEC"
+				},
+				{
+					"name": "Primary 400",
+					"slug": "primary-400",
+					"color": "#486AE8"
+				},
+				{
+					"name": "Primary 500",
+					"slug": "primary-500",
+					"color": "#2908FA"
+				},
+				{
+					"name": "Primary 600",
+					"slug": "primary-600",
+					"color": "#1E10C7"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				},
+				{
+					"name": "Base 100",
+					"slug": "base-100",
+					"color": "#F2F2F7"
+				},
+				{
+					"name": "Base 200",
+					"slug": "base-200",
+					"color": "#E5E5EA"
+				},
+				{
+					"name": "Base 300",
+					"slug": "base-300",
+					"color": "#D1D1D6"
+				},
+				{
+					"name": "Base 400",
+					"slug": "base-400",
+					"color": "#C7C7CC"
+				},
+				{
+					"name": "Base 500",
+					"slug": "base-500",
+					"color": "#AEAEB2"
+				},
+				{
+					"name": "Base 600",
+					"slug": "base-600",
+					"color": "#636366"
+				},
+				{
+					"name": "Base 700",
+					"slug": "base-700",
+					"color": "#48484A"
+				},
+				{
+					"name": "Base 800",
+					"slug": "base-800",
+					"color": "#3A3A3C"
+				},
+				{
+					"name": "Base 900",
+					"slug": "base-900",
+					"color": "#2C2C2E"
+				},
+				{
+					"name": "Base 1000",
+					"slug": "base-1000",
+					"color": "#1C1C1E"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				}
+			]
+		},
+		"custom": {
+			"content-size": "768px",
+			"wide-size": "1480px",
+			"fluid-size": "1480px"
+		},
+		"spacing": {
+			"blockGap": true,
+			"margin": true,
+			"padding": true
+		}
+	},
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--white)"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary-300)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--phonk)"
+				}
+			},
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--phonk)"
+				}
+			}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--normal)",
+			"fontFamily": "var(--wp--preset--font-family--barlow)",
+			"lineHeight": "var(--wp--custom--default-line-height)"
+		},
+		"blocks": {
+			"core/buttons": {
+				"spacing": {
+					"blockGap": "20px"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "global__before-footer",
+			"title": "Global - Before footer",
+			"area": "footer"
+		},
+		{
+			"name": "global__after-footer",
+			"title": "Global - After footer",
+			"area": "footer"
+		},
+		{
+			"name": "wc-shop__after-products",
+			"title": "WooCommerce - Shop, After products",
+			"area": "uncategorized"
+		},
+		{
+			"name": "wc-single-product__after-product-summary",
+			"title": "WooCommerce - After single product summary",
+			"area": "uncategorized"
+		},
+		{
+			"name": "wc-single-product__after-product",
+			"title": "WooCommerce - After single product",
+			"area": "uncategorized"
+		},
+		{
+			"name": "wc-checkout__before-thankyou",
+			"title": "WooCommerce - Before checkout “Thank you“ page",
+			"area": "uncategorized"
+		},
+		{
+			"name": "wc-checkout__after-thankyou",
+			"title": "WooCommerce - After checkout “Thank you“ page",
+			"area": "uncategorized"
+		}
+	]
+}

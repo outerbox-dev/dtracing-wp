@@ -1,0 +1,53 @@
+@use "Tools" as tool;
+@use "Settings/typography"as t;
+@use "Settings/colors"as c;
+@use "Settings/grid"as g;
+
+.toggle-vehicle-form-button {
+	position: relative;
+	background: none;
+	padding: 8px;
+	margin-left: auto;
+	margin-right: 8px;
+	display: flex;
+	border: 2px solid transparent !important; // stylelint-disable-line declaration-no-important
+
+	@media (min-width: g.$breakpoint-xl) {
+		display: none;
+	}
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:active:focus {
+		background-color: transparent;
+		border: 0;
+	}
+
+	&--form-visible {
+		border: 2px solid var(--wp--preset--color--primary-500) !important; // stylelint-disable-line declaration-no-important
+	}
+
+	.car-icon {
+		width: 20px;
+		height: 20px;
+		fill: var(--wp--preset--color--white);
+	}
+
+	&__count {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: -4px;
+		top: 3px;
+		transition: all .2s ease-in-out;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: var(--wp--preset--color--primary-500);
+		color: var(--wp--preset--color--white);
+		font-weight: 700;
+		@include tool.font-size(11);
+	}
+}

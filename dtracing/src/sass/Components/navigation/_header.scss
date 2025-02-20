@@ -1,0 +1,16 @@
+@use "Settings/colors"as c;
+
+@forward "@qala/Components/navigation/_header.scss" with (
+	$height: 80px,
+	$height--desktop: 120px,
+	$height--sticky: 90px,
+	$background-color: c.$black,
+	$branding_max-height: 50px,
+	$branding_max-height--desktop: 65px,
+	$branding_height: 50px,
+	$branding_height--desktop: 65px,
+);
+
+.qala-wishlist-header .qala-wishlist-button svg path {
+	fill: #fff;
+}

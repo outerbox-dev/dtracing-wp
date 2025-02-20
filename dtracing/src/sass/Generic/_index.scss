@@ -1,0 +1,11 @@
+/*
+ * === Generic ===
+ *
+ * This layer should only contain the most generic and basic of styles, like * { box-sizing: border-box }
+ *
+ * All modification is done in the related files, not here.
+ * SEE: style.scss for more info.
+ */
+
+@use "base";
+@use "normalize";

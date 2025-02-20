@@ -1,0 +1,112 @@
+@forward "@qala/Components/_forms-ninja.scss";
+@use "Settings/colors" as c;
+
+div.nf-form-content {
+	label {
+		color: c.$white;
+	}
+
+	input,
+	input:not([type="button"], [type="submit"]),
+	input:not([type="button"], [type="submit"]):focus,
+	select,
+	textarea,
+	textarea:focus {
+		color: c.$white !important; /* stylelint-disable-line declaration-no-important */
+	}
+
+	.nf-pass input,
+	.nf-pass input:not([type="button"], [type="submit"]),
+	.nf-pass input:not([type="button"], [type="submit"]):focus,
+	.nf-pass textarea {
+		background: transparent;
+	}
+
+	.nf-fail input,
+	.nf-fail input:not([type="button"], [type="submit"]),
+	.nf-fail input:not([type="button"], [type="submit"]):focus,
+	.nf-fail textarea {
+		color: c.$black !important; /* stylelint-disable-line declaration-no-important */
+	}
+
+	input[type="button"]:disabled,
+	input[type="button"]:disabled:hover {
+		background: c.$black !important; /* stylelint-disable-line declaration-no-important */
+	}
+
+	input[type="button"],
+	input[type="submit"] {
+		height: auto;
+		margin-top: 1rem;
+	}
+}
+
+.nf-form-content .nf-error .nf-error-msg,
+.nf-after-form-content .nf-error-msg.nf-error-field-errors,
+span.ninja-forms-req-symbol {
+	color: c.$error-lighter;
+}
+
+/* stylelint-disable no-duplicate-selectors */
+div.nf-form-content .list-select-wrap .nf-field-element > div,
+div.nf-form-content input,
+div.nf-form-content input:not([type="button"], [type="submit"]),
+div.nf-form-content textarea {
+	padding: .75rem 2.5rem .75rem 1rem;
+}
+
+div.nf-form-content input,
+div.nf-form-content input:not([type="button"], [type="submit"]),
+div.nf-form-content input:not([type="button"], [type="submit"]):focus,
+div.nf-form-content select,
+div.nf-form-content textarea,
+div.nf-form-content textarea:focus {
+	background: transparent;
+	border-color: var(--wp--preset--color--base-400);
+	border-radius: 2px;
+	border-width: 1.5px;
+	color: var(--wp--preset--color--base-1000);
+	font-family: var(--wp--preset--font-family--barlow);
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .005em;
+	line-height: 1.5;
+	resize: none;
+}
+
+div.nf-form-content input[type="submit"] {
+	-webkit-font-smoothing: initial;
+	background-color: var(--wp--preset--color--primary-500);
+	border: 2px solid var(--wp--preset--color--primary-500);
+	border-radius: unset;
+	color: var(--wp--preset--color--white);
+	cursor: pointer;
+	display: inline-block;
+	font-size: .875rem;
+	font-weight: 400;
+	letter-spacing: .02em;
+	line-height: 1;
+	outline: 3px solid transparent;
+	outline-offset: 0;
+	padding: 19px 33px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .4s ease;
+
+	&:hover,
+	&:focus,
+	&:focus:focus,
+	&:active {
+		background-color: var(--wp--preset--color--primary-600);
+		border: 2px solid var(--wp--preset--color--primary-600);
+		box-shadow: none;
+		color: var(--wp--preset--color--white);
+		font-size: .875rem;
+		letter-spacing: .02em;
+		line-height: 1;
+	}
+}
+
+div.nf-form-content input[type="submit"]:focus:not(:focus-visible) {
+	outline: none;
+} /* stylelint-enable no-duplicate-selectors */

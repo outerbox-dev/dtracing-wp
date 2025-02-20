@@ -1,0 +1,10 @@
+@forward "@qala/Components/woocommerce/_checkout-page-coupons.scss";
+@use "Settings/colors"as c;
+
+.woocommerce-cart,
+.woocommerce-checkout {
+	.woocommerce-form-coupon-toggle .woocommerce-info {
+		background-color: c.$white;
+		padding-left: 1rem;
+	}
+}

@@ -1,0 +1,13 @@
+/*
+ * === Tools ===
+ *
+ * This layer should contain functions and mixins.
+ * NO STYLE DECLARATIONS PERMITTED IN THIS LAYER
+ *
+ * All modification is done in the related files, not here.
+ * SEE: style.scss for more info.
+ */
+
+@forward "functions";
+@forward "mixins";
+@forward "buttons";

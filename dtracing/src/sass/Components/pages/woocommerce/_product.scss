@@ -1,0 +1,10 @@
+@forward "@qala/Components/pages/woocommerce/_product.scss";
+@use "Settings/colors" as c;
+
+.woocommerce.single-product {
+	div.product p.price {
+		.amount {
+			color: c.$white;
+		}
+	}
+}

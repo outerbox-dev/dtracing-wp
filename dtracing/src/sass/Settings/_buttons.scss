@@ -1,0 +1,88 @@
+@use "Settings/colors" as c;
+
+@forward "@qala/Settings/_buttons.scss" with (
+	$font-weight: 400,
+	$text-transform: uppercase,
+	$letter-spacing: .02em,
+	$padding: 19px 33px,
+	$border-radius: unset,
+	$border--full_thickness: 2px,
+	$border--full_thickness--medium: 2px,
+	$border--full_thickness--large: 2px,
+	$border--bottom_thickness: 2px,
+	$line-height: 1,
+
+	$background-color--hover: c.$primary-600,
+	$background-color--active: c.$primary-600,
+	$border-color--hover: c.$primary-600,
+	$border-color--active: c.$primary-600,
+	$color--active: c.$white,
+
+	$type-2_background-color: c.$white,
+	$type-2_border-color: c.$white,
+	$type-2_color: c.$primary,
+	$type-2_background-color--hover: c.$base-200,
+	$type-2_border-color--hover: c.$base-200,
+	$type-2_color--hover: c.$primary,
+	$type-2_background-color--active: c.$base-300,
+	$type-2_border-color--active: c.$base-300,
+	$type-2_color--active: c.$primary,
+	$type-2_background-color--disabled: c.$base-300,
+	$type-2_border-color--disabled: c.$base-300,
+	$type-2_color--disabled: c.$primary,
+
+	$type-3_background-color: transparent,
+	$type-3_border-color: c.$white,
+	$type-3_color: c.$white,
+	$type-3_background-color--hover: c.$white,
+	$type-3_border-color--hover: c.$white,
+	$type-3_color--hover: c.$primary,
+	$type-3_background-color--active: c.$base-300,
+	$type-3_border-color--active: c.$base-300,
+	$type-3_color--active: c.$primary,
+	$type-3_color--focus: c.$primary,
+
+	$type-4_border-color: c.$primary,
+	$type-4_color: c.$primary,
+	$type-4_background-color--hover: c.$primary-600,
+	$type-4_border-color--hover: c.$primary-600,
+	$type-4_color--hover: c.$white,
+	$type-4_background-color--active: c.$primary-600,
+	$type-4_border-color--active: c.$primary-600,
+	$type-4_color--active: c.$white,
+	$type-4_color--focus: c.$primary-200,
+
+	$type-5_color: c.$primary-500,
+	$type-5_border-color--hover: c.$primary-600,
+	$type-5_color--hover: c.$primary-600,
+	$type-5_border-color--active: c.$primary-600,
+	$type-5_color--active: c.$primary-600,
+	$type-5_border-color--focus: c.$primary-500,
+	$type-5_color--focus: c.$primary-500,
+	$type-5_border-color--disabled: c.$primary-200,
+	$type-5_color--disabled: c.$primary-200,
+
+	$type-6_border-color: c.$white,
+	$type-6_color: c.$white,
+	$type-6_border-color--hover: c.$base-200,
+	$type-6_color--hover: c.$base-200,
+	$type-6_border-color--active: c.$base-300,
+	$type-6_color--active: c.$base-300,
+	$type-6_border-color--focus: c.$base-200,
+	$type-6_color--focus: c.$base-200,
+	$type-6_border-color--disabled: c.$white,
+	$type-6_color--disabled: c.$white,
+
+	$type-7_color: c.$primary-500,
+	$type-7_background-color--hover: transparent,
+	$type-7_border-color--hover: transparent,
+	$type-7_color--hover: c.$primary-600,
+	$type-7_background-color--active: transparent,
+	$type-7_border-color--active: c.$primary-600,
+	$type-7_color--active: c.$primary-600,
+	$type-7_color--disabled: c.$primary-100
+
+);
+
+$padding-btn_medium: 16px 36px;
+$padding-btn_large: 17px 37px;

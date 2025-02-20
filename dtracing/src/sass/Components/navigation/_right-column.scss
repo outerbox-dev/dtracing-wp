@@ -1,0 +1,7 @@
+@use "Settings/colors" as c;
+
+@forward "@qala/Components/navigation/_right-column.scss" with (
+	$icon_color: c.$white,
+	$count_color: c.$white,
+	$count_background-color: c.$primary,
+);

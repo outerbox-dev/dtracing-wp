@@ -1,0 +1,27 @@
+@use "Settings/colors" as c;
+
+@forward "@qala/Components/woocommerce/_block-grid.scss";
+
+.wp-block-qala-blocks-shop-categories,
+.qala-latest-posts {
+	.slider-arrow {
+		background-color: c.$black;
+		border: 1px solid c.$black;
+
+		svg {
+			fill: c.$white;
+		}
+
+		&:hover {
+			background-color: c.$white;
+
+			svg {
+				fill: c.$black;
+			}
+		}
+	}
+}
+
+.shop-categories-heading__title {
+	color: c.$black;
+}

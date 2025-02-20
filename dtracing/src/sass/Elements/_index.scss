@@ -1,0 +1,14 @@
+/*
+ * === Element ===
+ *
+ * This layer should contain styling for html elements.
+ * NO CLASS DECLARATIONS PERMITTED IN THIS LAYER
+ * DISCLAIMER: There are currently some classes extending on element styling present, but this is the only exeption.
+ *
+ */
+
+@use "headings";
+@use "links";
+@use "body";
+@use "blockquote";
+@use "lists";

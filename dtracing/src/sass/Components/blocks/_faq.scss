@@ -1,0 +1,36 @@
+@use "Settings/colors" as c;
+
+$text-color: c.$white;
+$title-font-weight: 500;
+
+.wp-block-qala-blocks-faq-block {
+	&.enable-desktop {
+		.question-list {
+			&__item-title {
+				color: $text-color;
+
+				&:hover {
+					background-color: c.$base-900;
+				}
+			}
+
+			&__item {
+				&--current {
+					color: $text-color;
+					font-weight: $title-font-weight;
+				}
+			}
+
+			&__accordion-content {
+				color: $text-color;
+			}
+		}
+
+		.answer {
+			&__title,
+			&__content {
+				color: $text-color;
+			}
+		}
+	}
+}

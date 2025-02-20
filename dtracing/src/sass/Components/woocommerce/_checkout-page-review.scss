@@ -1,0 +1,45 @@
+@forward "@qala/Components/woocommerce/_checkout-page-review.scss";
+
+.woocommerce table.shop_table .order-total {
+	color: inherit;
+}
+
+.woocommerce .woocommerce-checkout-review-order-table {
+	.product-details,
+	tfoot .cart-subtotal,
+	tfoot .woocommerce-shipping-totals {
+		* {
+			font-family: var(--wp--preset--font-family--barlow) !important;
+			font-size: 14px !important;
+		}
+	}
+
+	.product-name-link a {
+		color: inherit;
+	}
+
+	.product-price {
+		font-weight: inherit;
+	}
+}
+
+.change-cart-button-wrap {
+	.order-review-head__change-cart-button {
+		color: inherit;
+	}
+}
+
+body.woocommerce-order-pay {
+	#payment,
+	.final-checkout-total {
+		color: var(--wp--preset--color--base-1000) !important;
+	}
+
+	.payment_method_authorize_net_cim_credit_card > label {
+		display: inline-flex !important;
+	}
+	
+	.payment_method_authorize_net_cim_echeck > label {
+		display: inline-flex !important;
+	}
+}

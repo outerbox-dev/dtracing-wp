@@ -1,0 +1,8 @@
+@forward "@qala/Components/woocommerce/_notices.scss";
+@use "Settings/colors"as c;
+
+.woocommerce {
+	.wc_payment_methods .woocommerce-info {
+		color: c.$white;
+	}
+}

@@ -1,0 +1,34 @@
+////
+/// Components
+/// This layer should contain the regular styles divided into understandable chunks
+///
+/// @group Components
+////
+
+@use "navigation";
+@use "mini-cart";
+@use "buttons";
+@use "headings";
+@use "accordion";
+@use "breadcrumbs";
+@use "filter";
+@use "modal";
+@use "overlay";
+@use "quantity";
+@use "select2";
+@use "usp";
+@use "grid-slider";
+@use "pages";
+@use "woocommerce";
+@use "forms";
+@use "core";
+@use "blocks";
+@use "modules";
+@use "cookies";
+@use "block-editor";
+@use "patterns";
+@use "qala-elastic-core";
+@use "qala-elastic-filters";
+@use "forms-ninja";
+@use "editor-styles-tinymce";
+@use "toggle-vehicle-form-button";

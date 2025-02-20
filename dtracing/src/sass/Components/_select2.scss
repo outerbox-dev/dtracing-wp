@@ -1,0 +1,30 @@
+@forward "@qala/Components/_select2.scss";
+@use "Settings/colors"as c;
+
+$options-bg: #343a40;
+
+.select2-search {
+	background-color: $options-bg;
+}
+
+.select2-search input {
+	color: c.$white;
+	background-color: $options-bg;
+}
+
+.select2-results {
+	background-color: $options-bg;
+}
+
+.select2-container--default .select2-selection--single[aria-expanded="true"] {
+	background-color: c.$white;
+}
+
+.select2-container--default .select2-results__option[data-selected="true"] {
+	background-color: c.$black;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+	background-color: c.$primary-500;
+}

@@ -1,0 +1,9 @@
+@forward "@qala/Components/navigation/_search.scss";
+
+@use "Tools"as tool;
+
+.nav-search-container {
+	.form-control {
+		@include tool.font-size( 13 );
+	}
+}

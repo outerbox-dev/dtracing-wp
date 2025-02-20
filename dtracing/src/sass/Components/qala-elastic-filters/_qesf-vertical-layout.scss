@@ -1,0 +1,39 @@
+@use "Settings/grid"as g;
+
+.qesf-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.qesf-main-container {
+
+	@media (min-width: g.$breakpoint-l) {
+		padding-left: 15px;
+	}
+}
+
+.qesf-reset-div {
+	padding-bottom: 15px;
+}
+
+.qesf-reset-head {
+	display: none;
+}
+
+.qesf-price-labels .qesf-price-min,
+.qesf-price-labels .qesf-price-max {
+	background-color: var(--wp--preset--color--base-1000);
+}
+
+.qesf-range-div .bottom-boxes div {
+	background-color: var(--wp--preset--color--base-1000);
+}
+
+.qesf-checkbox-div .products-count {
+	background-color: var(--wp--preset--color--base-1000);
+}
+
+.qesf-checkbox-div .my-checkbox input:checked ~ .checkmark,
+.qesf-checkbox-div .my-checkbox:hover input ~ .checkmark {
+	background-color: var(--wp--preset--color--base-1000);
+}

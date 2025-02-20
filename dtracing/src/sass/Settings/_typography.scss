@@ -1,0 +1,11 @@
+@use "Settings/colors" as c;
+
+@forward "@qala/Settings/_typography.scss" with (
+	$color__content: c.$white,
+	$color__heading: c.$white,
+	$font__heading: var(--wp--preset--font-family--phonk),
+	$font__content: var(--wp--preset--font-family--barlow),
+	$font__inter: var(--wp--preset--font-family--barlow),
+	$base__line-height: 1.5,
+	$base__font-weight: 400,
+);

@@ -1,0 +1,17 @@
+/*
+ * === Settings ===
+ *
+ * This layer should contain fonts, color definitions, etc.
+ * NO STYLE DECLARATIONS PERMITTED IN THIS LAYER
+ *
+ * All modification is done in the related files, not here.
+ * SEE: style.scss for more info.
+ */
+
+@use "colors";
+@use "typography";
+@use "grid";
+@use "spacing";
+@use "general";
+@use "z-index";
+@use "buttons";

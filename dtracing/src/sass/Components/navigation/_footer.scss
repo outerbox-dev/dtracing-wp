@@ -1,0 +1,42 @@
+@use "Settings/colors" as c;
+@use "Settings/typography" as t;
+@use "Settings/grid" as g;
+
+@forward "@qala/Components/navigation/_footer.scss" with (
+	$background_color: c.$black,
+);
+
+.newletter-form {
+	display: grid;
+	grid-template-columns: 1fr auto;
+
+	input[type="submit"] {
+		border-radius: 0;
+		border-color: #fff;
+
+		&:hover {
+			border-color: #fff;
+			color: #fff;
+		}
+	}
+}
+
+label.newsletter-terms {
+	transform: unset;
+	margin-top: 20px;
+}
+
+.footer-heading {
+	font-family: t.$font__content;
+}
+
+.footer-logo {
+	img {
+		max-width: 300px;
+		width: 100%;
+
+		@media (min-width: g.$breakpoint-m) {
+			max-width: 300px;
+		}
+	}
+}

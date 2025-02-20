@@ -1,0 +1,31 @@
+/*
+Theme Name: Dtracing
+Theme URI: https://angrycreative.se/
+Author: Angry Creative
+Author URI: https://angrycreative.se/
+Description:
+Version: 3.2.1
+Template: qala-theme
+Tags: angrycreative, starter-theme
+Text Domain: dtracing
+Domain Path: /languages
+*/
+
+
+.info--legal-links a:first-child{ display:none!important;}
+.archive-hero .archive-link-list {
+    max-height: 400px;
+    overflow: overlay;
+	scrollbar-width: thin;
+}
+.obx-boc-wrapper .basic-content a {
+	color: #fff; 
+	text-decoration: underline;
+}
+.obx-boc-wrapper a {
+    font-weight: inherit;
+}
+section.obx-cta p {
+    max-width: 90%;
+    margin: 20px auto;
+}

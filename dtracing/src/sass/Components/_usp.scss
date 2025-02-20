@@ -1,0 +1,5 @@
+@use "Settings/colors"as c;
+
+@forward "@qala/Components/_usp.scss" with (
+	$usp-bar__background-color: c.$primary,
+);

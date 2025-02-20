@@ -1,0 +1,18 @@
+@forward "@qala/Components/navigation/_top-header.scss";
+@use "Settings/colors" as c;
+
+.top-header-mobile {
+	background-color: c.$black;
+
+	a,
+	.site-header-right-column__button .cart-button {
+		color: c.$white;
+	}
+
+	.qala-wishlist-button:hover,
+	.qala-wishlist-button:active,
+	.qala-wishlist-button:active:focus,
+	.qala-wishlist-button:focus {
+		padding: 1em 2rem;
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "frontend": {
+    "js": [],
+    "react": [
+      {
+        "source": "src/javascript/main.js",
+        "dist": "dist/javascript"
+      }
+    ],
+    "sass": [
+      {
+        "source": "src/sass/style.scss",
+        "dist": "../css/main-block-style.css"
+      }
+    ]
+  }
+}

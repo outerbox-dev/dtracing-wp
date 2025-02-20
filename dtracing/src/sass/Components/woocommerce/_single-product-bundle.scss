@@ -1,0 +1,9 @@
+@forward "@qala/Components/woocommerce/_single-product-bundle.scss";
+@use "Settings/colors" as c;
+
+.bundle-product-content {
+	&--price-subtitle,
+	&--products-title {
+		color: c.$white;
+	}
+}

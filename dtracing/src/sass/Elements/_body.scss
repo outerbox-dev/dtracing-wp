@@ -1,0 +1,7 @@
+@use "Settings/colors" as c;
+
+@forward "@qala/Elements/_body.scss";
+
+body {
+	background-color: c.$black;
+}
